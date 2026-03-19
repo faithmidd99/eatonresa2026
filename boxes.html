@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>box model</title>
+    <style>
+        body {
+            div {
+                background: rgb(44, 150, 154);
+                border: 10px solid rgb(44, 110, 123);
+                height: 100px;
+                width: 500px;
+                padding: 30px;
+                margin: 20px;
+                border-radius: 30px;
+                color: rgb(197, 129, 40);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            }
+
+            #one {
+                background: rgb(98, 180, 180);
+                border: 10px solid rgb(44, 110, 123);
+                border-bottom: 25px solid rgb(48, 162, 175);
+                color: aliceblue;
+                border-top-left-radius: 40%;
+                border-top-right-radius: 40%;
+            }
+
+            #two {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                border-bottom: 25px solid rgb(54, 181, 181);
+                width:200px;
+                height:15px;
+                border-top-left-radius: 40%;
+                border-top-right-radius: 40%;
+                background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(255, 251, 133) 0%, rgb(84, 175, 178) 100.3% );
+
+            }
+
+            #three {
+                background: rgb(98, 180, 180);
+                border: 10px solid rgb(44, 110, 123);
+                border-bottom: 25px solid rgb(48, 162, 175);
+                color: aliceblue;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px;
+            }
+
+            #four {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                border-bottom: 25px solid rgb(54, 181, 181);
+                width:200px;
+                height:15px;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px;
+                background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(255, 251, 133) 0%, rgb(84, 175, 178) 100.3% );
+            }
+            p{
+                text-align:center;
+            }
+
+        }
+        body{
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(233, 229, 91) 0%, rgb(227, 131, 62) 100.3% );
+        background-size: cover;
+        background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">
+        <p>this is my first box.</p>
+    <div id="two">
+        <p>this is my second box.</p>
+    </div>
+    </div>
+    <div id="three">
+        <p>this is my third box.</p>
+
+        <div id="four">
+            <p>this is my fourth box.</p>
+        </div>
+    </div>
+</body>
+
+</html>
