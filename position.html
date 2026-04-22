@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>my position page</title>
+    <style>
+        body {
+            background: rgb(40, 130, 133);
+            color: aquamarine;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        div{
+            width: 300px;
+            height: 300px;
+            background: rgb(86, 174, 171);
+            margin: 50px;
+            border-radius: 160px;
+            border: px solid rgb(41, 125, 128);
+            box-shadow: inset 10px 15px 15px rgba(69, 208, 208, 0.461);
+            opacity:.80;
+        }
+        #static{
+            background: rgb(37, 132, 132);
+            position: static;
+        }
+        #sticky{
+            background: rgb(34, 146, 144);
+            position: sticky;
+            left: 100px;
+        }
+        #relative{
+            background:rgb(23, 140, 140);
+            position: relative;
+            top: -100px;
+            left: 200px;
+            z-index: -10;
+        }
+        #fixed{
+            background: rgb(43, 139, 142);
+            position: fixed;
+            top: 80px;
+            left: 450px;
+        }
+        #absolute{
+            background: teal;
+            position: absolute;
+            top: 200px;
+            left:150px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="static"></div>
+    <div id="sticky"></div>
+    <div id="relative"></div>
+    <div id="fixed"></div>
+    <div id="absolute"></div>
+
+</body>
+
+</html>
